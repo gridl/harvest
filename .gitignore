@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# temp files
+*~
+
 # C extensions
 *.so
 
@@ -47,18 +50,22 @@ coverage.xml
 
 # Translations
 *.mo
-*.pot
 
-# Django stuff:
-*.log
-local_settings.py
+# Mr Developer
+.mr.developer.cfg
+.pydevproject
+.project
+.settings/
+.idea/
 
-# Flask stuff:
-instance/
-.webassets-cache
+# fab files
+fabsettings.py
+fabfile.py
+fab_templates/
 
-# Scrapy stuff:
-.scrapy
+# graphviz files
+*_graphviz.png
+*_graphviz.dot
 
 # Sphinx documentation
 docs/_build/
@@ -72,8 +79,14 @@ target/
 # pyenv
 .python-version
 
+# locals
+local.py
+
 # celery beat schedule file
 celerybeat-schedule
+celeryev.pid
+celeryd*pid
+celeryd*log
 
 # dotenv
 .env
@@ -82,8 +95,6 @@ celerybeat-schedule
 venv/
 ENV/
 
-# Spyder project settings
-.spyderproject
-
-# Rope project settings
-.ropeproject
+# data
+big_data/
+data/
